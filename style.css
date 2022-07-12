@@ -142,7 +142,7 @@ body::-webkit-scrollbar {
     top: 30%;
     left: 52%;
 
-    opacity: 100%;
+    opacity: 80%;
 }
 
 .landing:hover .preview {
@@ -395,7 +395,7 @@ body::-webkit-scrollbar {
     top: 30%;
     left: 52%;
 
-    opacity: 100%;
+    opacity: 80%;
 }
 
 .invite:hover .preview {
@@ -650,7 +650,7 @@ body::-webkit-scrollbar {
     top: 30%;
     left: 52%;
 
-    opacity: 100%;
+    opacity: 80%;
 }
 
 .breaks:hover .preview {
@@ -903,7 +903,7 @@ body::-webkit-scrollbar {
     top: 30%;
     left: 52%;
 
-    opacity: 100%;
+    opacity: 80%;
 }
 
 .woc:hover .preview {
@@ -1157,7 +1157,7 @@ body::-webkit-scrollbar {
     top: 30%;
     left: 52%;
 
-    opacity: 100%;
+    opacity: 80%;
 }
 
 .port:hover .preview {
