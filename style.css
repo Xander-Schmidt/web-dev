@@ -196,6 +196,13 @@ body::-webkit-scrollbar {
     left: 600%;
 }
 
+.landing .infocard .hit {
+    transform: translate(-20%, -10%);
+
+    width: 300%;
+    height: 120%;
+}
+
 .landing .infocard .project {
     font-size: 30px;
     font-family: 'Monsterrat', sans-serif;
@@ -440,6 +447,13 @@ body::-webkit-scrollbar {
     transition: 1s;
     top: 210%;
     left: 700%;
+}
+
+.invite .infocard .hit {
+    transform: translate(-20%, -10%);
+
+    width: 300%;
+    height: 120%;
 }
 
 .invite .infocard .project {
@@ -690,6 +704,13 @@ body::-webkit-scrollbar {
     left: 700%;
 }
 
+.breaks .infocard .hit {
+    transform: translate(-20%, -10%);
+
+    width: 300%;
+    height: 120%;
+}
+
 .breaks .infocard .project {
     font-size: 30px;
     font-family: 'Monsterrat', sans-serif;
@@ -934,6 +955,13 @@ body::-webkit-scrollbar {
     transition: 1s;
     top: 210%;
     left: 700%;
+}
+
+.woc .infocard .hit {
+    transform: translate(-20%, -10%);
+
+    width: 300%;
+    height: 120%;
 }
 
 .woc .infocard .project {
@@ -1181,6 +1209,13 @@ body::-webkit-scrollbar {
     transition: 1s;
     top: 210%;
     left: 800%;
+}
+
+.port .infocard .hit {
+    transform: translate(-20%, -10%);
+
+    width: 300%;
+    height: 120%;
 }
 
 .port .infocard .project {
