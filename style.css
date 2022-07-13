@@ -3023,10 +3023,10 @@ and (min-height: 1080px)  {
     /* Spacer Finish */
 }
 
-/* Samsung S21 [w2340p x h1080p] */
+/* Samsung S21 [w384p x h854p] */
 
-@media (min-width: 2340px)
-and (min-height: 1080px)  {
+@media (min-width: 384px)
+and (min-height: 854px)  {
 
     /* Resolution */
 
