@@ -8,7 +8,7 @@ body {
     user-select: none;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    overflow-x: hidden;
+    overflow: hidden;
 
 
 }
@@ -17,1463 +17,4503 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-/* Landing Begin */
+/* Resolution Begin */
 
-.landing {
-    background-color: #2C2F33;
-
-    top: 47%;
-    left: 49%;
-
-    width: 350px; 
-    height: 200px;
-
-    transform: translate(-50%, -50%);
-    transform: rotate3D(1, 1, 1, -70deg);
-
-    z-index: -1;
-    position: absolute;
-    
-}
-
-.landing .shadow {
-    width: 350px;
-    height: 200px;
-
-    position: absolute;
-    border-radius: 8%;
-
-    top: 50%;
-    left: 40%;
-
-    transform: translate(-50%, -50%);
-
-    background-color: black;
-    opacity: 10%;
-
-    z-index: 1;
-    transition: .5s;
-}
-
-.landing .card .title  {
-    position: absolute;
-
-    top: 35%;
-    left: 50%;
-
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Monsterrat', sans-serif;
-
-    transform: translate(-50%, -50%);
-    letter-spacing: 2px;
-
-    width: 100%;
-    text-align: center;
-}
-
-.landing .card .hint  {
-    position: absolute;
-
-    top: 45%;
-    left: 50%;
-
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Monsterrat', sans-serif;
-
-    transform: translate(-50%, -50%);
-    letter-spacing: 2px;
-
-    width: 100%;
-    text-align: center;
-}
-
-.landing .card {
-    width: 350px;
-    height: 200px;
-
-    position: absolute;
-    border-radius: 8%;
-
-    top: 35%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    background-color: #202123;
-    opacity: 100%;
-    color: white;
-
-    z-index: 3;
-    transition: .5s;
-    opacity: 0;
-}
-
-.landing .preview {
-    min-width: 100%;
-    max-height: 100%;
-
-    border-color: #202123; 
-    border-style: none;
-
-    width: 350px;
-    height: 200px;
-
-    position: absolute;
-    border-radius: 15px;
-
-    top: 35%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    z-index: 2;
-    transition: .5s;
-}
-
-.landing:hover .card {
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    width: 360px; 
-    height: 210px;
-
-    top: 30%;
-    left: 52%;
-
-    opacity: 80%;
-}
-
-.landing:hover .preview {
-    width: 360px; 
-    height: 210px;
-
-    top: 30%;
-    left: 52%;
-
-    background-color: #111111;
-    border-radius: 15px;
-
-    position: absolute;
-    transform: translate(-50%, -50%);
-}
-
-.landing:hover .shadow  {
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    width: 360px; 
-    height: 210px;
-
-    top: 50%;
-    left: 40%;
-}
-
-.landing:hover .infocard {
-    position: absolute;
-
-    top: 210%;
-    left: 10%;
-}   
-
-/* landing infocard */
-
-.landing .infocard {
-    width: 800px;
-    height: 400px;
-
-    background-color: #2a2c2f;
-    opacity: 100%;
-    border-radius: 15px;
-
-    z-index: 3;
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    transition: 1s;
-    top: 210%;
-    left: 600%;
-}
-
-.landing .infocard .hit {
-    transform: translate(-20%, -10%);
-
-    width: 300%;
-    height: 120%;
-}
-
-.landing .infocard .project {
-    font-size: 30px;
-    font-family: 'Monsterrat', sans-serif;
-
-    letter-spacing: 5px;
-    color: #fff;
-
-    position: absolute;
+.resolutions {
     top: 10%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-}
-
-.landing .infocard .description {
-    font-size: 30px;
-    font-family: 'Monsterrat', sans-serif;
-
-    letter-spacing: 5px;
-    color: #fff;
-
-    text-align: center;
-    width: 550px;
-    height: auto;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-}
-
-.landing .infocard .landinglink {
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    border-radius: 100%;
-    top: 90%;
-    left: 90%;
-    
-    width: 70px;
-    height: 50px;
-
-    background-image: linear-gradient(90deg, #5865f2, #8873dc); 
-    background-size: 100%; 
-    background-repeat: repeat;
-
-    font-size: 50px;
-    font-family: 'Monsterrat', sans-serif;
-
-    text-align: center;
-}
-
-.landing .infocard .landinglink strong:first-of-type {
-    color: #fff;
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    z-index: 2;
-    top: 45%;
-    left: 60%;
-}
-
-/* Landing Finish */
-
-/* Invite Begin */
-
-.invite {
-    background-color: #2C2F33;
-
-    top: 63.5%;
-    left: 34%;
-
-    width: 350px; 
-    height: 200px;
-
-    transform: translate(-50%, -50%);
-    transform: rotate3D(1, 1, 1, -70deg);
-
-    z-index: -1;
-    position: absolute;
-    
-}
-
-.invite .shadow {
-    width: 350px;
-    height: 200px;
-
-    position: absolute;
-    border-radius: 8%;
-
-    top: 50%;
-    left: 40%;
-
-    transform: translate(-50%, -50%);
-
-    background-color: black;
-    opacity: 10%;
-
-    z-index: 1;
-    transition: .5s;
-}
-
-.invite .card .title  {
-    position: absolute;
-
-    top: 35%;
-    left: 50%;
-
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Monsterrat', sans-serif;
-
-    transform: translate(-50%, -50%);
-    letter-spacing: 2px;
-
-    width: 100%;
-    text-align: center;
-}
-
-.invite .card .hint  {
-    position: absolute;
-
-    top: 45%;
-    left: 50%;
-
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Monsterrat', sans-serif;
-
-    transform: translate(-50%, -50%);
-    letter-spacing: 2px;
-
-    width: 100%;
-    text-align: center;
-}
-
-.invite .card {
-    width: 350px;
-    height: 200px;
-
-    position: absolute;
-    border-radius: 8%;
-
-    top: 35%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    background-color: #202123;
-    opacity: 100%;
-    color: white;
-
-    z-index: 3;
-    transition: .5s;
-    opacity: 0;
-}
-
-.invite .preview {
-    min-width: 100%;
-    max-height: 100%;
-
-    border-color: #202123; 
-    border-style: none;
-
-    width: 350px;
-    height: 200px;
-
-    position: absolute;
-    border-radius: 15px;
-
-    top: 35%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    z-index: 2;
-    transition: .5s;
-}
-
-.invite:hover .card {
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    width: 361px; 
-    height: 211px;
-
-    top: 30%;
-    left: 52%;
-
-    opacity: 80%;
-}
-
-.invite:hover .preview {
-    width: 359; 
-    height: 209px;
-
-    top: 30%;
-    left: 52%;
-
-    background-color: #111111;
-    border-radius: 15px;
+    left: 9%;
 
     position: absolute;
     transform: translate(-50%, -50%);
-}
 
-.invite:hover .shadow  {
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    width: 360px; 
-    height: 210px;
-
-    top: 50%;
-    left: 40%;
-}
-
-.invite:hover .infocard {
-    position: absolute;
-
-    top: 210%;
-    left: 125%;
-}  
-
-/* Invite Infocard */
-
-.invite .infocard {
-    width: 800px;
-    height: 400px;
-
-    background-color: #2a2c2f;
-    opacity: 100%;
-    border-radius: 15px;
-
-    z-index: 3;
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    transition: 1s;
-    top: 210%;
-    left: 700%;
-}
-
-.invite .infocard .hit {
-    transform: translate(-20%, -10%);
-
-    width: 300%;
-    height: 120%;
-}
-
-.invite .infocard .project {
-    font-size: 30px;
-    font-family: 'Monsterrat', sans-serif;
-
-    letter-spacing: 5px;
-    color: #fff;
-
-    position: absolute;
-    top: 10%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-}
-
-.invite .infocard .description {
-    font-size: 30px;
-    font-family: 'Monsterrat', sans-serif;
-
-    letter-spacing: 5px;
-    color: #fff;
-
-    text-align: center;
-    width: 550px;
-    height: auto;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-}
-
-.invite .infocard .landinglink {
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    border-radius: 100%;
-    top: 90%;
-    left: 90%;
-    
-    width: 70px;
-    height: 50px;
-
-    background-image: linear-gradient(90deg, #5865f2, #8873dc); 
-    background-size: 100%; 
-    background-repeat: repeat;
-
-    font-size: 50px;
-    font-family: 'Monsterrat', sans-serif;
-
-    text-align: center;
-}
-
-.invite .infocard .landinglink strong:first-of-type {
-    color: #fff;
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    z-index: 2;
-    top: 45%;
-    left: 60%;
-}
-
-/* Invite Finish */
-
-/* Breaks Begin */
-
-.breaks {
-    background-color: #2C2F33;
-
-    top: 30%;
-    left: 64%;
-
-    width: 350px; 
-    height: 200px;
-
-    transform: translate(-50%, -50%);
-    transform: rotate3D(1, 1, 1, -70deg);
-
-    z-index: -1;
-    position: absolute;
-    
-}
-
-.breaks .shadow {
-    width: 350px;
-    height: 200px;
-
-    position: absolute;
-    border-radius: 8%;
-
-    top: 50%;
-    left: 40%;
-
-    transform: translate(-50%, -50%);
-
-    background-color: black;
-    opacity: 10%;
-
-    z-index: 1;
-    transition: .5s;
-}
-
-.breaks .card .title  {
-    position: absolute;
-
-    top: 35%;
-    left: 50%;
-
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Monsterrat', sans-serif;
-
-    transform: translate(-50%, -50%);
-    letter-spacing: 2px;
-
-    width: 100%;
-    text-align: center;
-}
-
-.breaks .card .hint  {
-    position: absolute;
-
-    top: 45%;
-    left: 50%;
-
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Monsterrat', sans-serif;
-
-    transform: translate(-50%, -50%);
-    letter-spacing: 2px;
-
-    width: 100%;
-    text-align: center;
-}
-
-.breaks .card {
-    width: 350px;
-    height: 200px;
-
-    position: absolute;
-    border-radius: 8%;
-
-    top: 35%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    background-color: #202123;
-    opacity: 100%;
-    color: white;
-
-    z-index: 3;
-    transition: .5s;
-    opacity: 0;
-}
-
-.breaks .preview {
-    min-width: 100%;
-    max-height: 100%;
-
-    border-color: #202123; 
-    border-style: none;
-
-    width: 350px;
-    height: 200px;
-
-    position: absolute;
-    border-radius: 15px;
-
-    top: 35%;
-    left: 50%;
-
-    background-image: url('https://cdn.discordapp.com/attachments/935537180590342144/996313565352960010/unknown.png');
-    background-size: cover;
-    transform: translate(-50%, -50%);
-
-    z-index: 2;
-    transition: .5s;
-}
-
-.breaks:hover .card {
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    width: 361px; 
-    height: 211px;
-
-    top: 30%;
-    left: 52%;
-
-    opacity: 80%;
-}
-
-.breaks:hover .preview {
-    width: 359; 
-    height: 209px;
-
-    top: 30%;
-    left: 52%;
-
-    background-color: #111111;
-    border-radius: 15px;
-
-    position: absolute;
-    transform: translate(-50%, -50%);
-}
-
-.breaks:hover .shadow  {
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    width: 360px; 
-    height: 210px;
-
-    top: 50%;
-    left: 40%;
-}
-
-.breaks:hover .infocard {
-    position: absolute;
-
-    top: 210%;
-    left: -100%;
-} 
-
-/* Breaks Infocard */
-
-.breaks .infocard {
-    width: 800px;
-    height: 400px;
-
-    background-color: #2a2c2f;
-    opacity: 100%;
-    border-radius: 15px;
-
-    z-index: 3;
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    transition: 1s;
-    top: 210%;
-    left: 700%;
-}
-
-.breaks .infocard .hit {
-    transform: translate(-20%, -10%);
-
-    width: 300%;
-    height: 120%;
-}
-
-.breaks .infocard .project {
-    font-size: 30px;
-    font-family: 'Monsterrat', sans-serif;
-
-    letter-spacing: 5px;
-    color: #fff;
-
-    position: absolute;
-    top: 10%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-}
-
-.breaks .infocard .description {
-    font-size: 30px;
-    font-family: 'Monsterrat', sans-serif;
-
-    letter-spacing: 5px;
-    color: #fff;
-
-    text-align: center;
-    width: 550px;
-    height: auto;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-}
-
-.breaks .infocard .landinglink {
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    border-radius: 100%;
-    top: 90%;
-    left: 90%;
-    
-    width: 70px;
-    height: 50px;
-
-    background-image: linear-gradient(90deg, #5865f2, #8873dc); 
-    background-size: 100%; 
-    background-repeat: repeat;
-
-    font-size: 50px;
-    font-family: 'Monsterrat', sans-serif;
-
-    text-align: center;
-}
-
-.breaks .infocard .landinglink strong:first-of-type {
-    color: #fff;
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    z-index: 2;
-    top: 45%;
-    left: 60%;
-}
-
-/* Breaks Finish */
-
-/* WoC Begin */
-
-.woc {
-    background-color: #2C2F33;
-
-    top: 14%;
-    left: 79%;
-
-    width: 350px; 
-    height: 200px;
-
-    transform: translate(-50%, -50%);
-    transform: rotate3D(1, 1, 1, -70deg);
-
-    z-index: -1;
-    position: absolute;
-    
-}
-
-.woc .shadow {
-    width: 350px;
-    height: 200px;
-
-    position: absolute;
-    border-radius: 8%;
-
-    top: 50%;
-    left: 40%;
-
-    transform: translate(-50%, -50%);
-
-    background-color: black;
-    opacity: 10%;
-
-    z-index: 1;
-    transition: .5s;
-}
-
-.woc .card .title  {
-    position: absolute;
-
-    top: 35%;
-    left: 50%;
-
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Monsterrat', sans-serif;
-
-    transform: translate(-50%, -50%);
-    letter-spacing: 2px;
-
-    width: 100%;
-    text-align: center;
-}
-
-.woc .card .hint  {
-    position: absolute;
-
-    top: 45%;
-    left: 50%;
-
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Monsterrat', sans-serif;
-
-    transform: translate(-50%, -50%);
-    letter-spacing: 2px;
-
-    width: 100%;
-    text-align: center;
-}
-
-.woc .card {
-    width: 350px;
-    height: 200px;
-
-    position: absolute;
-    border-radius: 8%;
-
-    top: 35%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    background-color: #202123;
-    opacity: 100%;
-    color: white;
-
-    z-index: 3;
-    transition: .5s;
-    opacity: 0;
-}
-
-.woc .preview {
-    min-width: 100%;
-    max-height: 100%;
-
-    border-color: #202123; 
-    border-style: none;
-
-    width: 350px;
-    height: 200px;
-
-    position: absolute;
-    border-radius: 15px;
-
-    top: 35%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    z-index: 2;
-    transition: .5s;
-}
-
-.woc:hover .card {
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    width: 361px; 
-    height: 211px;
-
-    top: 30%;
-    left: 52%;
-
-    opacity: 80%;
-}
-
-.woc:hover .preview {
-    width: 359; 
-    height: 209px;
-
-    top: 30%;
-    left: 52%;
-
-    background-color: #111111;
-    border-radius: 15px;
-
-    position: absolute;
-    transform: translate(-50%, -50%);
-}
-
-.woc:hover .shadow  {
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    width: 360px; 
-    height: 210px;
-
-    top: 50%;
-    left: 40%;
-}
-
-.woc:hover .infocard {
-    position: absolute;
-
-    top: 210%;
-    left: -210%;
-} 
-
-/* WoC Infocard */
-
-.woc .infocard {
-    width: 800px;
-    height: 400px;
-
-    background-color: #2a2c2f;
-    opacity: 100%;
-    border-radius: 15px;
-
-    z-index: 3;
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    transition: 1s;
-    top: 210%;
-    left: 700%;
-}
-
-.woc .infocard .hit {
-    transform: translate(-20%, -10%);
-
-    width: 300%;
-    height: 120%;
-}
-
-.woc .infocard .project {
-    font-size: 30px;
-    font-family: 'Monsterrat', sans-serif;
-
-    letter-spacing: 5px;
-    color: #fff;
-
-    position: absolute;
-    top: 10%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-}
-
-.woc .infocard .description {
-    font-size: 30px;
-    font-family: 'Monsterrat', sans-serif;
-
-    letter-spacing: 5px;
-    color: #fff;
-
-    text-align: center;
-    width: 550px;
-    height: auto;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-}
-
-.woc .infocard .landinglink {
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    border-radius: 100%;
-    top: 90%;
-    left: 90%;
-    
-    width: 70px;
-    height: 50px;
-
-    background-image: linear-gradient(90deg, #5865f2, #8873dc); 
-    background-size: 100%; 
-    background-repeat: repeat;
-
-    font-size: 50px;
-    font-family: 'Monsterrat', sans-serif;
-
-    text-align: center;
-}
-
-.woc .infocard .landinglink strong:first-of-type {
-    color: #fff;
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    z-index: 2;
-    top: 45%;
-    left: 60%;
-}
-
-/* WoC Finish */
-
-/* Port Begin */
-
-.port {
-    background-color: #2C2F33;
-
-    top: 79.5%;
-    left: 18.5%;
-
-    width: 350px; 
-    height: 200px;
-
-    transform: translate(-50%, -50%);
-    transform: rotate3D(1, 1, 1, -70deg);
-
-    z-index: -1;
-    position: absolute;
-}
-
-.port .shadow {
-    width: 350px;
-    height: 200px;
-
-    position: absolute;
-    border-radius: 8%;
-
-    top: 50%;
-    left: 40%;
-
-    transform: translate(-50%, -50%);
-
-    background-color: black;
-    opacity: 10%;
-
-    z-index: 1;
-    transition: .5s;
-}
-
-.port .card .title  {
-    position: absolute;
-
-    top: 35%;
-    left: 50%;
-
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Monsterrat', sans-serif;
-
-    transform: translate(-50%, -50%);
-    letter-spacing: 2px;
-
-    width: 100%;
-    text-align: center;
-}
-
-.port .card .hint  {
-    position: absolute;
-
-    top: 45%;
-    left: 50%;
-
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Monsterrat', sans-serif;
-
-    transform: translate(-50%, -50%);
-    letter-spacing: 2px;
-
-    width: 100%;
-    text-align: center;
-}
-
-.port .card {
-    width: 350px;
-    height: 200px;
-
-    position: absolute;
-    border-radius: 8%;
-
-    top: 35%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    background-color: #202123;
-    opacity: 100%;
-    color: white;
-
-    z-index: 3;
-    transition: .5s;
-    opacity: 0;
-}
-
-.port .preview {
-    min-width: 100%;
-    max-height: 100%;
-
-    border-color: #202123; 
-    border-style: none;
-
-    width: 350px;
-    height: 200px;
-
-    position: absolute;
-    border-radius: 15px;
-
-    top: 35%;
-    left: 50%;
-
-    background-image: url("https://cdn.discordapp.com/attachments/935537180590342144/996319081634476072/unknown.png");
-    background-size: cover;
-    transform: translate(-50%, -50%);
-
-    z-index: 2;
-    transition: .5s;
-}
-
-.port:hover .card {
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    width: 361px; 
-    height: 211px;
-
-    top: 30%;
-    left: 52%;
-
-    opacity: 80%;
-}
-
-.port:hover .preview {
-    width: 359; 
-    height: 209px;
-
-    top: 30%;
-    left: 52%;
-
-    background-color: #111111;
-    border-radius: 15px;
-
-    position: absolute;
-    transform: translate(-50%, -50%);
-}
-
-.port:hover .shadow  {
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    width: 360px; 
-    height: 210px;
-
-    top: 50%;
-    left: 40%;
-}
-
-.port:hover .infocard {
-    position: absolute;
-
-    top: 210%;
-    left: 250%;
-}  
-
-/* Port Infocard */
-
-.port .infocard {
-    width: 800px;
-    height: 400px;
-
-    background-color: #2a2c2f;
-    opacity: 100%;
-    border-radius: 15px;
-
-    z-index: 3;
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    transition: 1s;
-    top: 210%;
-    left: 800%;
-}
-
-.port .infocard .hit {
-    transform: translate(-20%, -10%);
-
-    width: 300%;
-    height: 120%;
-}
-
-.port .infocard .project {
-    font-size: 30px;
-    font-family: 'Monsterrat', sans-serif;
-
-    letter-spacing: 5px;
-    color: #fff;
-
-    position: absolute;
-    top: 10%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-}
-
-.port .infocard .description {
-    font-size: 30px;
-    font-family: 'Monsterrat', sans-serif;
-
-    letter-spacing: 5px;
-    color: #fff;
-
-    text-align: center;
-    width: 550px;
-    height: auto;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-}
-
-.port .infocard .landinglink {
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    border-radius: 100%;
-    top: 90%;
-    left: 90%;
-    
-    width: 70px;
-    height: 50px;
-
-    background-image: linear-gradient(90deg, #5865f2, #8873dc); 
-    background-size: 100%; 
-    background-repeat: repeat;
-
-    font-size: 50px;
-    font-family: 'Monsterrat', sans-serif;
-
-    text-align: center;
-}
-
-.port .infocard .landinglink strong:first-of-type {
-    color: #fff;
-    position: absolute;
-    transform: translate(-50%, -50%);
-
-    z-index: 2;
-    top: 45%;
-    left: 60%;
-}
-
-/* Port Finish */
-
-/* Heading Begin */
-
-.heading {
-    top: 30.5%;
-    left: 30.5%;
-
-    width: 600px; 
-    height: 100px;
-
-    transform: translate(-50%, -50%);
-    transform: rotate3d(50, 20, -50, .8rad);
-
-    font-size: 40px;
-    letter-spacing: 4px;
-    font-family: 'Monsterrat', sans-serif;
-
-    z-index: 0;
-    position: absolute;
-}
-
-.heading .card .title .letter {
-    transition: .5s;
-    color: #fff;
-    position: absolute; 
-    top: 50%;
-}
-
-.heading .card .title .letter  span{
-    transition: .5s;
-    position: absolute;
-    top: 30%;
-}
-
-.heading .card .title .letter:hover {
-    color: darkorchid;
-
-    position: absolute;
-    top: 60%;
-}
-
-.heading .card .title .letter:hover span {
-    color: darkorchid;
-    position: absolute;
-    top: 10%;
-    left: -32%;
-}
-
-/* Heading Finish */
-
-/* Spacer Begin */
-
-.spacer {
-    position: absolute;
-    z-index: -1;
-
-    width: 100%;
-    height: 100px;
-
-    background-color: inherit;
-    transform: translate(-50%, -50%);
-
-    top: 125%;
-    left: 50%;
-}
-
-/* spacer + games sect */
-
-.spacer .games {
-    transform: translate(-50%, -50%);
-    transform: rotate3D(1, 1, 1, -70deg);
-    border-radius: 15px;
-    
     width: 250px;
     height: 75px;
+    border-radius: 15px;
+    opacity: 10%;
 
     background-image: linear-gradient(90deg, #5865f2, #8873dc); 
     background-size: 100%; 
-    background-repeat: repeat;
-
-    position: absolute;
-    color: #fff;
-
-    letter-spacing: 5px;
-    font-family: 'Monsterrat', sans-serif;
-
-
-    top: -150%;
-    left: 5%;
-
-    z-index: 2;
-    transition: .5s;
+    background-repeat: repeat
 }
 
-.spacer .games:hover {
-    top: -140%;
-    left: 4.75%;
-
-    position: absolute;
+.resolutions p {
+    opacity: 0%;
 }
 
-.spacer .games span {
-    width: 100%;
-    height: fit-content;
-    text-align: center;
+/* Resolution End */
 
-    position: absolute;
-    top: 40%;
-}
+/* HDTV 1980('S) [w1680p x h1050p] */ 
 
-.spacer .gamesshadow {
-    transform: translate(-50%, -50%);
-    transform: rotate3D(1, 1, 1, -70deg);
+@media (min-width: 1680px)
+and (min-height: 1050px)  {
 
-    border-radius: 15px;
-    position: absolute;
+    /* Resolution */
+    .resolutions .HDTV {
+        color: #fff;
+        font-family: 'Monsterrat', sans-serif;
+        font-size: 20px;
 
-    background-color: black;
-    opacity: 10%;
+        width: 100%;
+        height: fit-content;
+        opacity: 100%;
+
+        top: 30%;
+        left: 50%;
+        text-align: center;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .resolutions .FHD {
+        color: #111111;
+        opacity: 0%;
+    }
     
-    width: 250px;
-    height: 75px;
+    /* Landing Begin */
 
-    top: -130%;
-    left: 4.75%;
+    .landing {
+        background-color: #2C2F33;
 
-    z-index: 1;
+        top: 44%;
+        left: 48%;
+
+        width: 350px; 
+        height: 200px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        z-index: -1;
+        position: absolute;
+    }
+
+    .landing .shadow {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 50%;   
+        left: 40%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: black;
+        opacity: 10%;
+
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .landing .card .title  {
+        position: absolute;
+
+        top: 35%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .landing .card .hint  {
+        position: absolute;
+
+        top: 45%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .landing .card {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: #202123;
+        opacity: 100%;
+        color: white;
+
+        z-index: 3;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .landing .preview {
+        min-width: 100%;
+        max-height: 100%;
+
+        border-color: #202123; 
+        border-style: none;
+
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 15px;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .landing:hover .card {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 30%;
+        left: 52%;
+
+        opacity: 80%;
+    }
+
+    .landing:hover .preview {
+        width: 360px; 
+        height: 210px;
+
+        top: 30%;
+        left: 52%;
+
+        background-color: #111111;
+        border-radius: 15px;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .landing:hover .shadow  {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 50%;
+        left: 40%;
+    }
+
+    .landing:hover .infocard {
+        position: absolute;
+
+        top: 210%;
+        left: 10%;
+    }   
+
+    /* landing infocard */
+
+    .landing .infocard {
+        width: 800px;
+        height: 400px;
+
+        background-color: #2a2c2f;
+        opacity: 100%;
+        border-radius: 15px;
+
+        z-index: 3;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        transition: 1s;
+        top: 210%;
+        left: 1000%;
+    }
+
+    .landing .infocard .hit {
+        transform: translate(-20%, -10%);
+
+        width: 300%;
+        height: 120%;
+    }
+
+    .landing .infocard .project {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        position: absolute;
+        top: 10%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .landing .infocard .description {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        text-align: center;
+        width: 550px;
+        height: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .landing .infocard .landinglink {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        border-radius: 100%;
+        top: 90%;
+        left: 90%;
+        
+        width: 70px;
+        height: 50px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        font-size: 50px;
+        font-family: 'Monsterrat', sans-serif;
+
+        text-align: center;
+    }
+
+    .landing .infocard .landinglink strong:first-of-type {
+        color: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        top: 45%;
+        left: 60%;
+    }
+
+    /* Landing Finish */
+
+    /* Invite Begin */
+
+    .invite {
+        background-color: #2C2F33;
+
+        top: 56%;
+        left: 36%;
+
+        width: 350px; 
+        height: 200px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        z-index: -1;
+        position: absolute;
+        
+    }
+
+    .invite .shadow {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 50%;
+        left: 40%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: black;
+        opacity: 10%;
+
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .invite .card .title  {
+        position: absolute;
+
+        top: 35%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .invite .card .hint  {
+        position: absolute;
+
+        top: 45%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .invite .card {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: #202123;
+        opacity: 100%;
+        color: white;
+
+        z-index: 3;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .invite .preview {
+        min-width: 100%;
+        max-height: 100%;
+
+        border-color: #202123; 
+        border-style: none;
+
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 15px;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .invite:hover .card {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 361px; 
+        height: 211px;
+
+        top: 30%;
+        left: 52%;
+
+        opacity: 80%;
+    }
+
+    .invite:hover .preview {
+        width: 359; 
+        height: 209px;
+
+        top: 30%;
+        left: 52%;
+
+        background-color: #111111;
+        border-radius: 15px;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .invite:hover .shadow  {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 50%;
+        left: 40%;
+    }
+
+    .invite:hover .infocard {
+        position: absolute;
+
+        top: 210%;
+        left: 125%;
+    }  
+
+    /* Invite Infocard */
+
+    .invite .infocard {
+        width: 800px;
+        height: 400px;
+
+        background-color: #2a2c2f;
+        opacity: 100%;
+        border-radius: 15px;
+
+        z-index: 3;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        transition: 1s;
+        top: 210%;
+        left: 1000%;
+    }
+
+    .invite .infocard .hit {
+        transform: translate(-20%, -10%);
+
+        width: 300%;
+        height: 120%;
+    }
+
+    .invite .infocard .project {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        position: absolute;
+        top: 10%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .invite .infocard .description {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        text-align: center;
+        width: 550px;
+        height: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .invite .infocard .landinglink {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        border-radius: 100%;
+        top: 90%;
+        left: 90%;
+        
+        width: 70px;
+        height: 50px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        font-size: 50px;
+        font-family: 'Monsterrat', sans-serif;
+
+        text-align: center;
+    }
+
+    .invite .infocard .landinglink strong:first-of-type {
+        color: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        top: 45%;
+        left: 60%;
+    }
+
+    /* Invite Finish */
+
+    /* Breaks Begin */
+
+    .breaks {
+        background-color: #2C2F33;
+
+        top: 32%;
+        left: 60%;
+
+        width: 350px; 
+        height: 200px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        z-index: -1;
+        position: absolute;
+        
+    }
+
+    .breaks .shadow {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 50%;
+        left: 40%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: black;
+        opacity: 10%;
+
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .breaks .card .title  {
+        position: absolute;
+
+        top: 35%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .breaks .card .hint  {
+        position: absolute;
+
+        top: 45%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .breaks .card {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: #202123;
+        opacity: 100%;
+        color: white;
+
+        z-index: 3;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .breaks .preview {
+        min-width: 100%;
+        max-height: 100%;
+
+        border-color: #202123; 
+        border-style: none;
+
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 15px;
+
+        top: 35%;
+        left: 50%;
+
+        background-image: url('https://cdn.discordapp.com/attachments/935537180590342144/996313565352960010/unknown.png');
+        background-size: cover;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .breaks:hover .card {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 361px; 
+        height: 211px;
+
+        top: 30%;
+        left: 52%;
+
+        opacity: 80%;
+    }
+
+    .breaks:hover .preview {
+        width: 359; 
+        height: 209px;
+
+        top: 30%;
+        left: 52%;
+
+        background-color: #111111;
+        border-radius: 15px;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .breaks:hover .shadow  {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 50%;
+        left: 40%;
+    }
+
+    .breaks:hover .infocard {
+        position: absolute;
+
+        top: 210%;
+        left: -100%;
+    } 
+
+    /* Breaks Infocard */
+
+    .breaks .infocard {
+        width: 800px;
+        height: 400px;
+
+        background-color: #2a2c2f;
+        opacity: 100%;
+        border-radius: 15px;
+
+        z-index: 3;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        transition: 1s;
+        top: 210%;
+        left: 1000%;
+    }
+
+    .breaks .infocard .hit {
+        transform: translate(-20%, -10%);
+
+        width: 300%;
+        height: 120%;
+    }
+
+    .breaks .infocard .project {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        position: absolute;
+        top: 10%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .breaks .infocard .description {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        text-align: center;
+        width: 550px;
+        height: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .breaks .infocard .landinglink {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        border-radius: 100%;
+        top: 90%;
+        left: 90%;
+        
+        width: 70px;
+        height: 50px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        font-size: 50px;
+        font-family: 'Monsterrat', sans-serif;
+
+        text-align: center;
+    }
+
+    .breaks .infocard .landinglink strong:first-of-type {
+        color: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        top: 45%;
+        left: 60%;
+    }
+
+    /* Breaks Finish */
+
+    /* WoC Begin */
+
+    .woc {
+        background-color: #2C2F33;
+
+        top: 20%;
+        left: 72%;
+
+        width: 350px; 
+        height: 200px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        z-index: -1;
+        position: absolute;
+        
+    }
+
+    .woc .shadow {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 50%;
+        left: 40%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: black;
+        opacity: 10%;
+
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .woc .card .title  {
+        position: absolute;
+
+        top: 35%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .woc .card .hint  {
+        position: absolute;
+
+        top: 45%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .woc .card {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: #202123;
+        opacity: 100%;
+        color: white;
+
+        z-index: 3;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .woc .preview {
+        min-width: 100%;
+        max-height: 100%;
+
+        border-color: #202123; 
+        border-style: none;
+
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 15px;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .woc:hover .card {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 361px; 
+        height: 211px;
+
+        top: 30%;
+        left: 52%;
+
+        opacity: 80%;
+    }
+
+    .woc:hover .preview {
+        width: 359; 
+        height: 209px;
+
+        top: 30%;
+        left: 52%;
+
+        background-color: #111111;
+        border-radius: 15px;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .woc:hover .shadow  {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 50%;
+        left: 40%;
+    }
+
+    .woc:hover .infocard {
+        position: absolute;
+
+        top: 210%;
+        left: -210%;
+    } 
+
+    /* WoC Infocard */
+
+    .woc .infocard {
+        width: 800px;
+        height: 400px;
+
+        background-color: #2a2c2f;
+        opacity: 100%;
+        border-radius: 15px;
+
+        z-index: 3;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        transition: 1s;
+        top: 210%;
+        left: 1000%;
+    }
+
+    .woc .infocard .hit {
+        transform: translate(-20%, -10%);
+
+        width: 300%;
+        height: 120%;
+    }
+
+    .woc .infocard .project {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        position: absolute;
+        top: 10%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .woc .infocard .description {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        text-align: center;
+        width: 550px;
+        height: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .woc .infocard .landinglink {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        border-radius: 100%;
+        top: 90%;
+        left: 90%;
+        
+        width: 70px;
+        height: 50px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        font-size: 50px;
+        font-family: 'Monsterrat', sans-serif;
+
+        text-align: center;
+    }
+
+    .woc .infocard .landinglink strong:first-of-type {
+        color: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        top: 45%;
+        left: 60%;
+    }
+
+    /* WoC Finish */
+
+    /* Port Begin */
+
+    .port {
+        background-color: #2C2F33;
+
+        top: 67%;
+        left: 24%;
+
+        width: 350px; 
+        height: 200px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        z-index: -1;
+        position: absolute;
+    }
+
+    .port .shadow {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 50%;
+        left: 40%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: black;
+        opacity: 10%;
+
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .port .card .title  {
+        position: absolute;
+
+        top: 35%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .port .card .hint  {
+        position: absolute;
+
+        top: 45%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .port .card {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: #202123;
+        opacity: 100%;
+        color: white;
+
+        z-index: 3;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .port .preview {
+        min-width: 100%;
+        max-height: 100%;
+
+        border-color: #202123; 
+        border-style: none;
+
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 15px;
+
+        top: 35%;
+        left: 50%;
+
+        background-image: url("https://cdn.discordapp.com/attachments/935537180590342144/996319081634476072/unknown.png");
+        background-size: cover;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .port:hover .card {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 361px; 
+        height: 211px;
+
+        top: 30%;
+        left: 52%;
+
+        opacity: 80%;
+    }
+
+    .port:hover .preview {
+        width: 359; 
+        height: 209px;
+
+        top: 30%;
+        left: 52%;
+
+        background-color: #111111;
+        border-radius: 15px;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .port:hover .shadow  {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 50%;
+        left: 40%;
+    }
+
+    .port:hover .infocard {
+        position: absolute;
+
+        top: 210%;
+        left: 250%;
+    }  
+
+    /* Port Infocard */
+
+    .port .infocard {
+        width: 800px;
+        height: 400px;
+
+        background-color: #2a2c2f;
+        opacity: 100%;
+        border-radius: 15px;
+
+        z-index: 3;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        transition: 1s;
+        top: 210%;
+        left: 1100%;
+    }
+
+    .port .infocard .hit {
+        transform: translate(-20%, -10%);
+
+        width: 300%;
+        height: 120%;
+    }
+
+    .port .infocard .project {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        position: absolute;
+        top: 10%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .port .infocard .description {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        text-align: center;
+        width: 550px;
+        height: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .port .infocard .landinglink {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        border-radius: 100%;
+        top: 90%;
+        left: 90%;
+        
+        width: 70px;
+        height: 50px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        font-size: 50px;
+        font-family: 'Monsterrat', sans-serif;
+
+        text-align: center;
+    }
+
+    .port .infocard .landinglink strong:first-of-type {
+        color: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        top: 45%;
+        left: 60%;
+    }
+
+    /* Port Finish */
+
+    /* Heading Begin */
+
+    .heading {
+        top: 33.5%;
+        left: 33.5%;
+
+        width: 600px; 
+        height: 100px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        font-size: 40px;
+        letter-spacing: 4px;
+        font-family: 'Monsterrat', sans-serif;
+
+        z-index: 0;
+        position: absolute;
+    }
+
+    .heading .card .title .letter {
+        transition: .5s;
+        color: #fff;
+        position: absolute; 
+        top: 50%;
+    }
+
+    .heading .card .title .letter  span{
+        transition: .5s;
+        position: absolute;
+        top: 30%;
+    }
+
+    .heading .card .title .letter:hover {
+        color: darkorchid;
+
+        position: absolute;
+        top: 60%;
+    }
+
+    .heading .card .title .letter:hover span {
+        color: darkorchid;
+        position: absolute;
+        top: 10%;
+        left: -32%;
+    }
+
+    /* Heading Finish */
+
+    /* Spacer Begin */
+
+    .spacer {
+        position: absolute;
+        z-index: -1;
+
+        width: 100%;
+        height: 100px;
+
+        background-color: inherit;
+        transform: translate(-50%, -50%);
+
+        top: 125%;
+        left: 50%;
+    }
+
+    /* spacer + games sect */
+
+    .spacer .games {
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+        border-radius: 15px;
+        
+        width: 250px;
+        height: 75px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        position: absolute;
+        color: #fff;
+
+        letter-spacing: 5px;
+        font-family: 'Monsterrat', sans-serif;
+
+
+        top: -950%;
+        left: 82%;
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .spacer .games:hover {
+        top: -940%;
+        left: 82%;
+
+        position: absolute;
+    }
+
+    .spacer .games span {
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+
+        position: absolute;
+        top: 40%;
+    }
+
+    .spacer .gamesshadow {
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        border-radius: 15px;
+        position: absolute;
+
+        background-color: black;
+        opacity: 10%;
+        
+        width: 250px;
+        height: 75px;
+
+        top: -930%;
+        left: 82%;
+
+        z-index: 1;
+    }
+
+    /* spacer + bots sect */
+
+    .spacer .bots {
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+        border-radius: 15px;
+        
+        width: 250px;
+        height: 75px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        position: absolute;
+        color: #fff;
+
+        letter-spacing: 5px;
+        font-family: 'Monsterrat', sans-serif;
+
+
+        top: -410%;
+        left: 31%;
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .spacer .bots:hover {
+        top: -400%;
+        left: 31%;
+
+        position: absolute;
+    }
+
+    .spacer .bots span {
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+
+        position: absolute;
+        top: 40%;
+    }
+
+    .spacer .botsshadow {
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        border-radius: 15px;
+        position: absolute;
+
+        background-color: black;
+        opacity: 10%;
+        
+        width: 250px;
+        height: 75px;
+
+        top: -390%;
+        left: 31%;
+
+        z-index: 1;
+    }
+
+    /* Spacer Finish */
 }
 
-/* spacer + bots sect */
+/* FHD [w1920p x h1080p] */
 
-.spacer .bots {
-    transform: translate(-50%, -50%);
-    transform: rotate3D(1, 1, 1, -70deg);
-    border-radius: 15px;
+@media (min-width: 1920px)
+and (min-height: 1080px)  {
+    /* Resolution Begin */
+
+    .resolutions .FHD {
+        color: #fff;
+        font-family: 'Monsterrat', sans-serif;
+        font-size: 20px;
+
+        width: 100%;
+        height: 100%;
+        opacity: 100%;
+
+        top: 60%;
+        left: 50%;
+        text-align: center;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .resolutions .HDTV {
+        color: #111111;
+        opacity: 0%;
+    }
+
+    /* Resolution End */
+
+    /* Landing Begin */
+
+    .landing {
+        background-color: #2C2F33;
+
+        top: 40%;
+        left: 44%;
+
+        width: 350px; 
+        height: 200px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        z-index: -1;
+        position: absolute;
+        
+    }
+
+    .landing .shadow {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 50%;   
+        left: 40%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: black;
+        opacity: 10%;
+
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .landing .card .title  {
+        position: absolute;
+
+        top: 35%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .landing .card .hint  {
+        position: absolute;
+
+        top: 45%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .landing .card {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: #202123;
+        opacity: 100%;
+        color: white;
+
+        z-index: 3;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .landing .preview {
+        min-width: 100%;
+        max-height: 100%;
+
+        border-color: #202123; 
+        border-style: none;
+
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 15px;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .landing:hover .card {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 30%;
+        left: 52%;
+
+        opacity: 80%;
+    }
+
+    .landing:hover .preview {
+        width: 360px; 
+        height: 210px;
+
+        top: 30%;
+        left: 52%;
+
+        background-color: #111111;
+        border-radius: 15px;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .landing:hover .shadow  {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 50%;
+        left: 40%;
+    }
+
+    .landing:hover .infocard {
+        position: absolute;
+
+        top: 210%;
+        left: 10%;
+    }   
+
+    /* landing infocard */
+
+    .landing .infocard {
+        width: 800px;
+        height: 400px;
+
+        background-color: #2a2c2f;
+        opacity: 100%;
+        border-radius: 15px;
+
+        z-index: 3;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        transition: 1s;
+        top: 210%;
+        left: 1000%;
+    }
+
+    .landing .infocard .hit {
+        transform: translate(-20%, -10%);
+
+        width: 300%;
+        height: 120%;
+    }
+
+    .landing .infocard .project {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        position: absolute;
+        top: 10%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .landing .infocard .description {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        text-align: center;
+        width: 550px;
+        height: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .landing .infocard .landinglink {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        border-radius: 100%;
+        top: 90%;
+        left: 90%;
+        
+        width: 70px;
+        height: 50px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        font-size: 50px;
+        font-family: 'Monsterrat', sans-serif;
+
+        text-align: center;
+    }
+
+    .landing .infocard .landinglink strong:first-of-type {
+        color: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        top: 45%;
+        left: 60%;
+    }
+
+    /* Landing Finish */
+
+    /* Invite Begin */
+
+    .invite {
+        background-color: #2C2F33;
+
+        top: 54%;
+        left: 30%;
+
+        width: 350px; 
+        height: 200px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        z-index: -1;
+        position: absolute;
+        
+    }
+
+    .invite .shadow {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 50%;
+        left: 40%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: black;
+        opacity: 10%;
+
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .invite .card .title  {
+        position: absolute;
+
+        top: 35%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .invite .card .hint  {
+        position: absolute;
+
+        top: 45%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .invite .card {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: #202123;
+        opacity: 100%;
+        color: white;
+
+        z-index: 3;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .invite .preview {
+        min-width: 100%;
+        max-height: 100%;
+
+        border-color: #202123; 
+        border-style: none;
+
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 15px;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .invite:hover .card {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 361px; 
+        height: 211px;
+
+        top: 30%;
+        left: 52%;
+
+        opacity: 80%;
+    }
+
+    .invite:hover .preview {
+        width: 359; 
+        height: 209px;
+
+        top: 30%;
+        left: 52%;
+
+        background-color: #111111;
+        border-radius: 15px;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .invite:hover .shadow  {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 50%;
+        left: 40%;
+    }
+
+    .invite:hover .infocard {
+        position: absolute;
+
+        top: 210%;
+        left: 125%;
+    }  
+
+    /* Invite Infocard */
+
+    .invite .infocard {
+        width: 800px;
+        height: 400px;
+
+        background-color: #2a2c2f;
+        opacity: 100%;
+        border-radius: 15px;
+
+        z-index: 3;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        transition: 1s;
+        top: 210%;
+        left: 1000%;
+    }
+
+    .invite .infocard .hit {
+        transform: translate(-20%, -10%);
+
+        width: 300%;
+        height: 120%;
+    }
+
+    .invite .infocard .project {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        position: absolute;
+        top: 10%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .invite .infocard .description {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        text-align: center;
+        width: 550px;
+        height: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .invite .infocard .landinglink {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        border-radius: 100%;
+        top: 90%;
+        left: 90%;
+        
+        width: 70px;
+        height: 50px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        font-size: 50px;
+        font-family: 'Monsterrat', sans-serif;
+
+        text-align: center;
+    }
+
+    .invite .infocard .landinglink strong:first-of-type {
+        color: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        top: 45%;
+        left: 60%;
+    }
+
+    /* Invite Finish */
+
+    /* Breaks Begin */
+
+    .breaks {
+        background-color: #2C2F33;
+
+        top: 25%;
+        left: 57%;
+
+        width: 350px; 
+        height: 200px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        z-index: -1;
+        position: absolute;
+        
+    }
+
+    .breaks .shadow {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 50%;
+        left: 40%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: black;
+        opacity: 10%;
+
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .breaks .card .title  {
+        position: absolute;
+
+        top: 35%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .breaks .card .hint  {
+        position: absolute;
+
+        top: 45%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .breaks .card {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: #202123;
+        opacity: 100%;
+        color: white;
+
+        z-index: 3;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .breaks .preview {
+        min-width: 100%;
+        max-height: 100%;
+
+        border-color: #202123; 
+        border-style: none;
+
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 15px;
+
+        top: 35%;
+        left: 50%;
+
+        background-image: url('https://cdn.discordapp.com/attachments/935537180590342144/996313565352960010/unknown.png');
+        background-size: cover;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .breaks:hover .card {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 361px; 
+        height: 211px;
+
+        top: 30%;
+        left: 52%;
+
+        opacity: 80%;
+    }
+
+    .breaks:hover .preview {
+        width: 359; 
+        height: 209px;
+
+        top: 30%;
+        left: 52%;
+
+        background-color: #111111;
+        border-radius: 15px;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .breaks:hover .shadow  {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 50%;
+        left: 40%;
+    }
+
+    .breaks:hover .infocard {
+        position: absolute;
+
+        top: 210%;
+        left: -100%;
+    } 
+
+    /* Breaks Infocard */
+
+    .breaks .infocard {
+        width: 800px;
+        height: 400px;
+
+        background-color: #2a2c2f;
+        opacity: 100%;
+        border-radius: 15px;
+
+        z-index: 3;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        transition: 1s;
+        top: 210%;
+        left: 1000%;
+    }
+
+    .breaks .infocard .hit {
+        transform: translate(-20%, -10%);
+
+        width: 300%;
+        height: 120%;
+    }
+
+    .breaks .infocard .project {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        position: absolute;
+        top: 10%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .breaks .infocard .description {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        text-align: center;
+        width: 550px;
+        height: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .breaks .infocard .landinglink {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        border-radius: 100%;
+        top: 90%;
+        left: 90%;
+        
+        width: 70px;
+        height: 50px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        font-size: 50px;
+        font-family: 'Monsterrat', sans-serif;
+
+        text-align: center;
+    }
+
+    .breaks .infocard .landinglink strong:first-of-type {
+        color: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        top: 45%;
+        left: 60%;
+    }
+
+    /* Breaks Finish */
+
+    /* WoC Begin */
+
+    .woc {
+        background-color: #2C2F33;
+
+        top: 11%;
+        left: 70%;
+
+        width: 350px; 
+        height: 200px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        z-index: -1;
+        position: absolute;
+        
+    }
+
+    .woc .shadow {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 50%;
+        left: 40%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: black;
+        opacity: 10%;
+
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .woc .card .title  {
+        position: absolute;
+
+        top: 35%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .woc .card .hint  {
+        position: absolute;
+
+        top: 45%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .woc .card {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: #202123;
+        opacity: 100%;
+        color: white;
+
+        z-index: 3;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .woc .preview {
+        min-width: 100%;
+        max-height: 100%;
+
+        border-color: #202123; 
+        border-style: none;
+
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 15px;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .woc:hover .card {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 361px; 
+        height: 211px;
+
+        top: 30%;
+        left: 52%;
+
+        opacity: 80%;
+    }
+
+    .woc:hover .preview {
+        width: 359; 
+        height: 209px;
+
+        top: 30%;
+        left: 52%;
+
+        background-color: #111111;
+        border-radius: 15px;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .woc:hover .shadow  {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 50%;
+        left: 40%;
+    }
+
+    .woc:hover .infocard {
+        position: absolute;
+
+        top: 210%;
+        left: -210%;
+    } 
+
+    /* WoC Infocard */
+
+    .woc .infocard {
+        width: 800px;
+        height: 400px;
+
+        background-color: #2a2c2f;
+        opacity: 100%;
+        border-radius: 15px;
+
+        z-index: 3;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        transition: 1s;
+        top: 210%;
+        left: 1000%;
+    }
+
+    .woc .infocard .hit {
+        transform: translate(-20%, -10%);
+
+        width: 300%;
+        height: 120%;
+    }
+
+    .woc .infocard .project {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        position: absolute;
+        top: 10%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .woc .infocard .description {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        text-align: center;
+        width: 550px;
+        height: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .woc .infocard .landinglink {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        border-radius: 100%;
+        top: 90%;
+        left: 90%;
+        
+        width: 70px;
+        height: 50px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        font-size: 50px;
+        font-family: 'Monsterrat', sans-serif;
+
+        text-align: center;
+    }
+
+    .woc .infocard .landinglink strong:first-of-type {
+        color: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        top: 45%;
+        left: 60%;
+    }
+
+    /* WoC Finish */
+
+    /* Port Begin */
+
+    .port {
+        background-color: #2C2F33;
+
+        top: 68%;
+        left: 16%;
+
+        width: 350px; 
+        height: 200px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        z-index: -1;
+        position: absolute;
+    }
+
+    .port .shadow {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 50%;
+        left: 40%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: black;
+        opacity: 10%;
+
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .port .card .title  {
+        position: absolute;
+
+        top: 35%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .port .card .hint  {
+        position: absolute;
+
+        top: 45%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .port .card {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: #202123;
+        opacity: 100%;
+        color: white;
+
+        z-index: 3;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .port .preview {
+        min-width: 100%;
+        max-height: 100%;
+
+        border-color: #202123; 
+        border-style: none;
+
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 15px;
+
+        top: 35%;
+        left: 50%;
+
+        background-image: url("https://cdn.discordapp.com/attachments/935537180590342144/996319081634476072/unknown.png");
+        background-size: cover;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .port:hover .card {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 361px; 
+        height: 211px;
+
+        top: 30%;
+        left: 52%;
+
+        opacity: 80%;
+    }
+
+    .port:hover .preview {
+        width: 359; 
+        height: 209px;
+
+        top: 30%;
+        left: 52%;
+
+        background-color: #111111;
+        border-radius: 15px;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .port:hover .shadow  {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 50%;
+        left: 40%;
+    }
+
+    .port:hover .infocard {
+        position: absolute;
+
+        top: 210%;
+        left: 250%;
+    }  
+
+    /* Port Infocard */
+
+    .port .infocard {
+        width: 800px;
+        height: 400px;
+
+        background-color: #2a2c2f;
+        opacity: 100%;
+        border-radius: 15px;
+
+        z-index: 3;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        transition: 1s;
+        top: 210%;
+        left: 1100%;
+    }
+
+    .port .infocard .hit {
+        transform: translate(-20%, -10%);
+
+        width: 300%;
+        height: 120%;
+    }
+
+    .port .infocard .project {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        position: absolute;
+        top: 10%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .port .infocard .description {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        text-align: center;
+        width: 550px;
+        height: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .port .infocard .landinglink {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        border-radius: 100%;
+        top: 90%;
+        left: 90%;
+        
+        width: 70px;
+        height: 50px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        font-size: 50px;
+        font-family: 'Monsterrat', sans-serif;
+
+        text-align: center;
+    }
+
+    .port .infocard .landinglink strong:first-of-type {
+        color: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        top: 45%;
+        left: 60%;
+    }
+
+    /* Port Finish */
+
+    /* Heading Begin */
+
+    .heading {
+        top: 30.5%;
+        left: 30.5%;
+
+        width: 600px; 
+        height: 100px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        font-size: 40px;
+        letter-spacing: 4px;
+        font-family: 'Monsterrat', sans-serif;
+
+        z-index: 0;
+        position: absolute;
+    }
+
+    .heading .card .title .letter {
+        transition: .5s;
+        color: #fff;
+        position: absolute; 
+        top: 50%;
+    }
+
+    .heading .card .title .letter  span{
+        transition: .5s;
+        position: absolute;
+        top: 30%;
+    }
+
+    .heading .card .title .letter:hover {
+        color: darkorchid;
+
+        position: absolute;
+        top: 60%;
+    }
+
+    .heading .card .title .letter:hover span {
+        color: darkorchid;
+        position: absolute;
+        top: 10%;
+        left: -32%;
+    }
+
+    /* Heading Finish */
+
+    /* Spacer Begin */
+
+    .spacer {
+        position: absolute;
+        z-index: -1;
+
+        width: 100%;
+        height: 100px;
+
+        background-color: inherit;
+        transform: translate(-50%, -50%);
+
+        top: 125%;
+        left: 50%;
+    }
+
+    /* spacer + games sect */
+
+    .spacer .games {
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+        border-radius: 15px;
+        
+        width: 250px;
+        height: 75px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        position: absolute;
+        color: #fff;
+
+        letter-spacing: 5px;
+        font-family: 'Monsterrat', sans-serif;
+
+
+        top: -1080%;
+        left: 80%;
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .spacer .games:hover {
+        top: -1070%;
+        left: 80%;
+
+        position: absolute;
+    }
+
+    .spacer .games span {
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+
+        position: absolute;
+        top: 40%;
+    }
+
+    .spacer .gamesshadow {
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        border-radius: 15px;
+        position: absolute;
+
+        background-color: black;
+        opacity: 10%;
+        
+        width: 250px;
+        height: 75px;
+
+        top: -1060%;
+        left: 80%;;
+
+        z-index: 1;
+    }
+
+    /* spacer + bots sect */
+
+    .spacer .bots {
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+        border-radius: 15px;
+        
+        width: 250px;
+        height: 75px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        position: absolute;
+        color: #fff;
+
+        letter-spacing: 5px;
+        font-family: 'Monsterrat', sans-serif;
+
+
+        top: -410%;
+        left: 23%;
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .spacer .bots:hover {
+        top: -400%;
+        left: 23%;
+
+        position: absolute;
+    }
+
+    .spacer .bots span {
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+
+        position: absolute;
+        top: 40%;
+    }
+
+    .spacer .botsshadow {
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        border-radius: 15px;
+        position: absolute;
+
+        background-color: black;
+        opacity: 10%;
+        
+        width: 250px;
+        height: 75px;
+
+        top: -390%;
+        left: 23%;
+
+        z-index: 1;
+    }
+
+    /* Spacer Finish */
+}
+
+/* Samsung S21 [w2340p x h1080p] */
+
+@media (min-width: 2340px)
+and (min-height: 1080px)  {
+
+    /* Resolution */
+
+    .resolutions .SS21FE {
+        color: #fff;
+        font-family: 'Monsterrat', sans-serif;
+        font-size: 20px;
+
+        width: 100%;
+        height: fit-content;
+        opacity: 100%;
+
+        top: 30%;
+        left: 50%;
+        text-align: center;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .resolutions .HDTV {
+        color: #111111;
+        opacity: 0%;
+    }
+
+    .resolutions .FHD {
+        color: #111111;
+        opacity: 0%;
+    }
     
-    width: 250px;
-    height: 75px;
+    /* Landing Begin */
 
-    background-image: linear-gradient(90deg, #5865f2, #8873dc); 
-    background-size: 100%; 
-    background-repeat: repeat;
+    .landing {
+        background-color: #2C2F33;
 
-    position: absolute;
-    color: #fff;
+        top: 44%;
+        left: 48%;
 
-    letter-spacing: 5px;
-    font-family: 'Monsterrat', sans-serif;
+        width: 350px; 
+        height: 200px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        z-index: -1;
+        position: absolute;
+    }
+
+    .landing .shadow {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 50%;   
+        left: 40%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: black;
+        opacity: 10%;
+
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .landing .card .title  {
+        position: absolute;
+
+        top: 35%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .landing .card .hint  {
+        position: absolute;
+
+        top: 45%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .landing .card {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: #202123;
+        opacity: 100%;
+        color: white;
+
+        z-index: 3;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .landing .preview {
+        min-width: 100%;
+        max-height: 100%;
+
+        border-color: #202123; 
+        border-style: none;
+
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 15px;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .landing:hover .card {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 30%;
+        left: 52%;
+
+        opacity: 80%;
+    }
+
+    .landing:hover .preview {
+        width: 360px; 
+        height: 210px;
+
+        top: 30%;
+        left: 52%;
+
+        background-color: #111111;
+        border-radius: 15px;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .landing:hover .shadow  {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 50%;
+        left: 40%;
+    }
+
+    .landing:hover .infocard {
+        position: absolute;
+
+        top: 210%;
+        left: 10%;
+    }   
+
+    /* landing infocard */
+
+    .landing .infocard {
+        width: 800px;
+        height: 400px;
+
+        background-color: #2a2c2f;
+        opacity: 100%;
+        border-radius: 15px;
+
+        z-index: 3;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        transition: 1s;
+        top: 210%;
+        left: 1000%;
+    }
+
+    .landing .infocard .hit {
+        transform: translate(-20%, -10%);
+
+        width: 300%;
+        height: 120%;
+    }
+
+    .landing .infocard .project {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        position: absolute;
+        top: 10%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .landing .infocard .description {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        text-align: center;
+        width: 550px;
+        height: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .landing .infocard .landinglink {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        border-radius: 100%;
+        top: 90%;
+        left: 90%;
+        
+        width: 70px;
+        height: 50px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        font-size: 50px;
+        font-family: 'Monsterrat', sans-serif;
+
+        text-align: center;
+    }
+
+    .landing .infocard .landinglink strong:first-of-type {
+        color: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        top: 45%;
+        left: 60%;
+    }
+
+    /* Landing Finish */
+
+    /* Invite Begin */
+
+    .invite {
+        background-color: #2C2F33;
+
+        top: 56%;
+        left: 36%;
+
+        width: 350px; 
+        height: 200px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        z-index: -1;
+        position: absolute;
+        
+    }
+
+    .invite .shadow {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 50%;
+        left: 40%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: black;
+        opacity: 10%;
+
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .invite .card .title  {
+        position: absolute;
+
+        top: 35%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .invite .card .hint  {
+        position: absolute;
+
+        top: 45%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .invite .card {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: #202123;
+        opacity: 100%;
+        color: white;
+
+        z-index: 3;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .invite .preview {
+        min-width: 100%;
+        max-height: 100%;
+
+        border-color: #202123; 
+        border-style: none;
+
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 15px;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .invite:hover .card {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 361px; 
+        height: 211px;
+
+        top: 30%;
+        left: 52%;
+
+        opacity: 80%;
+    }
+
+    .invite:hover .preview {
+        width: 359; 
+        height: 209px;
+
+        top: 30%;
+        left: 52%;
+
+        background-color: #111111;
+        border-radius: 15px;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .invite:hover .shadow  {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 50%;
+        left: 40%;
+    }
+
+    .invite:hover .infocard {
+        position: absolute;
+
+        top: 210%;
+        left: 125%;
+    }  
+
+    /* Invite Infocard */
+
+    .invite .infocard {
+        width: 800px;
+        height: 400px;
+
+        background-color: #2a2c2f;
+        opacity: 100%;
+        border-radius: 15px;
+
+        z-index: 3;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        transition: 1s;
+        top: 210%;
+        left: 1000%;
+    }
+
+    .invite .infocard .hit {
+        transform: translate(-20%, -10%);
+
+        width: 300%;
+        height: 120%;
+    }
+
+    .invite .infocard .project {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        position: absolute;
+        top: 10%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .invite .infocard .description {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        text-align: center;
+        width: 550px;
+        height: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .invite .infocard .landinglink {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        border-radius: 100%;
+        top: 90%;
+        left: 90%;
+        
+        width: 70px;
+        height: 50px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        font-size: 50px;
+        font-family: 'Monsterrat', sans-serif;
+
+        text-align: center;
+    }
+
+    .invite .infocard .landinglink strong:first-of-type {
+        color: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        top: 45%;
+        left: 60%;
+    }
+
+    /* Invite Finish */
+
+    /* Breaks Begin */
+
+    .breaks {
+        background-color: #2C2F33;
+
+        top: 32%;
+        left: 60%;
+
+        width: 350px; 
+        height: 200px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        z-index: -1;
+        position: absolute;
+        
+    }
+
+    .breaks .shadow {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 50%;
+        left: 40%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: black;
+        opacity: 10%;
+
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .breaks .card .title  {
+        position: absolute;
+
+        top: 35%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .breaks .card .hint  {
+        position: absolute;
+
+        top: 45%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .breaks .card {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: #202123;
+        opacity: 100%;
+        color: white;
+
+        z-index: 3;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .breaks .preview {
+        min-width: 100%;
+        max-height: 100%;
+
+        border-color: #202123; 
+        border-style: none;
+
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 15px;
+
+        top: 35%;
+        left: 50%;
+
+        background-image: url('https://cdn.discordapp.com/attachments/935537180590342144/996313565352960010/unknown.png');
+        background-size: cover;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .breaks:hover .card {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 361px; 
+        height: 211px;
+
+        top: 30%;
+        left: 52%;
+
+        opacity: 80%;
+    }
+
+    .breaks:hover .preview {
+        width: 359; 
+        height: 209px;
+
+        top: 30%;
+        left: 52%;
+
+        background-color: #111111;
+        border-radius: 15px;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .breaks:hover .shadow  {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 50%;
+        left: 40%;
+    }
+
+    .breaks:hover .infocard {
+        position: absolute;
+
+        top: 210%;
+        left: -100%;
+    } 
+
+    /* Breaks Infocard */
+
+    .breaks .infocard {
+        width: 800px;
+        height: 400px;
+
+        background-color: #2a2c2f;
+        opacity: 100%;
+        border-radius: 15px;
+
+        z-index: 3;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        transition: 1s;
+        top: 210%;
+        left: 1000%;
+    }
+
+    .breaks .infocard .hit {
+        transform: translate(-20%, -10%);
+
+        width: 300%;
+        height: 120%;
+    }
+
+    .breaks .infocard .project {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        position: absolute;
+        top: 10%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .breaks .infocard .description {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        text-align: center;
+        width: 550px;
+        height: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .breaks .infocard .landinglink {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        border-radius: 100%;
+        top: 90%;
+        left: 90%;
+        
+        width: 70px;
+        height: 50px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        font-size: 50px;
+        font-family: 'Monsterrat', sans-serif;
+
+        text-align: center;
+    }
+
+    .breaks .infocard .landinglink strong:first-of-type {
+        color: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        top: 45%;
+        left: 60%;
+    }
+
+    /* Breaks Finish */
+
+    /* WoC Begin */
+
+    .woc {
+        background-color: #2C2F33;
+
+        top: 20%;
+        left: 72%;
+
+        width: 350px; 
+        height: 200px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        z-index: -1;
+        position: absolute;
+        
+    }
+
+    .woc .shadow {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 50%;
+        left: 40%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: black;
+        opacity: 10%;
+
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .woc .card .title  {
+        position: absolute;
+
+        top: 35%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .woc .card .hint  {
+        position: absolute;
+
+        top: 45%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .woc .card {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: #202123;
+        opacity: 100%;
+        color: white;
+
+        z-index: 3;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .woc .preview {
+        min-width: 100%;
+        max-height: 100%;
+
+        border-color: #202123; 
+        border-style: none;
+
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 15px;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .woc:hover .card {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 361px; 
+        height: 211px;
+
+        top: 30%;
+        left: 52%;
+
+        opacity: 80%;
+    }
+
+    .woc:hover .preview {
+        width: 359; 
+        height: 209px;
+
+        top: 30%;
+        left: 52%;
+
+        background-color: #111111;
+        border-radius: 15px;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .woc:hover .shadow  {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 50%;
+        left: 40%;
+    }
+
+    .woc:hover .infocard {
+        position: absolute;
+
+        top: 210%;
+        left: -210%;
+    } 
+
+    /* WoC Infocard */
+
+    .woc .infocard {
+        width: 800px;
+        height: 400px;
+
+        background-color: #2a2c2f;
+        opacity: 100%;
+        border-radius: 15px;
+
+        z-index: 3;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        transition: 1s;
+        top: 210%;
+        left: 1000%;
+    }
+
+    .woc .infocard .hit {
+        transform: translate(-20%, -10%);
+
+        width: 300%;
+        height: 120%;
+    }
+
+    .woc .infocard .project {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        position: absolute;
+        top: 10%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .woc .infocard .description {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        text-align: center;
+        width: 550px;
+        height: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .woc .infocard .landinglink {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        border-radius: 100%;
+        top: 90%;
+        left: 90%;
+        
+        width: 70px;
+        height: 50px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        font-size: 50px;
+        font-family: 'Monsterrat', sans-serif;
+
+        text-align: center;
+    }
+
+    .woc .infocard .landinglink strong:first-of-type {
+        color: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        top: 45%;
+        left: 60%;
+    }
+
+    /* WoC Finish */
+
+    /* Port Begin */
+
+    .port {
+        background-color: #2C2F33;
+
+        top: 67%;
+        left: 24%;
+
+        width: 350px; 
+        height: 200px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        z-index: -1;
+        position: absolute;
+    }
+
+    .port .shadow {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 50%;
+        left: 40%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: black;
+        opacity: 10%;
+
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .port .card .title  {
+        position: absolute;
+
+        top: 35%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .port .card .hint  {
+        position: absolute;
+
+        top: 45%;
+        left: 50%;
+
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Monsterrat', sans-serif;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .port .card {
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 8%;
+
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: #202123;
+        opacity: 100%;
+        color: white;
+
+        z-index: 3;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .port .preview {
+        min-width: 100%;
+        max-height: 100%;
+
+        border-color: #202123; 
+        border-style: none;
+
+        width: 350px;
+        height: 200px;
+
+        position: absolute;
+        border-radius: 15px;
+
+        top: 35%;
+        left: 50%;
+
+        background-image: url("https://cdn.discordapp.com/attachments/935537180590342144/996319081634476072/unknown.png");
+        background-size: cover;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .port:hover .card {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 361px; 
+        height: 211px;
+
+        top: 30%;
+        left: 52%;
+
+        opacity: 80%;
+    }
+
+    .port:hover .preview {
+        width: 359; 
+        height: 209px;
+
+        top: 30%;
+        left: 52%;
+
+        background-color: #111111;
+        border-radius: 15px;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .port:hover .shadow  {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        width: 360px; 
+        height: 210px;
+
+        top: 50%;
+        left: 40%;
+    }
+
+    .port:hover .infocard {
+        position: absolute;
+
+        top: 210%;
+        left: 250%;
+    }  
+
+    /* Port Infocard */
+
+    .port .infocard {
+        width: 800px;
+        height: 400px;
+
+        background-color: #2a2c2f;
+        opacity: 100%;
+        border-radius: 15px;
+
+        z-index: 3;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        transition: 1s;
+        top: 210%;
+        left: 1100%;
+    }
+
+    .port .infocard .hit {
+        transform: translate(-20%, -10%);
+
+        width: 300%;
+        height: 120%;
+    }
+
+    .port .infocard .project {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        position: absolute;
+        top: 10%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .port .infocard .description {
+        font-size: 30px;
+        font-family: 'Monsterrat', sans-serif;
+
+        letter-spacing: 5px;
+        color: #fff;
+
+        text-align: center;
+        width: 550px;
+        height: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .port .infocard .landinglink {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        border-radius: 100%;
+        top: 90%;
+        left: 90%;
+        
+        width: 70px;
+        height: 50px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        font-size: 50px;
+        font-family: 'Monsterrat', sans-serif;
+
+        text-align: center;
+    }
+
+    .port .infocard .landinglink strong:first-of-type {
+        color: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+        top: 45%;
+        left: 60%;
+    }
+
+    /* Port Finish */
+
+    /* Heading Begin */
+
+    .heading {
+        top: 33.5%;
+        left: 33.5%;
+
+        width: 600px; 
+        height: 100px;
+
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        font-size: 40px;
+        letter-spacing: 4px;
+        font-family: 'Monsterrat', sans-serif;
+
+        z-index: 0;
+        position: absolute;
+    }
+
+    .heading .card .title .letter {
+        transition: .5s;
+        color: #fff;
+        position: absolute; 
+        top: 50%;
+    }
+
+    .heading .card .title .letter  span{
+        transition: .5s;
+        position: absolute;
+        top: 30%;
+    }
+
+    .heading .card .title .letter:hover {
+        color: darkorchid;
+
+        position: absolute;
+        top: 60%;
+    }
+
+    .heading .card .title .letter:hover span {
+        color: darkorchid;
+        position: absolute;
+        top: 10%;
+        left: -32%;
+    }
+
+    /* Heading Finish */
+
+    /* Spacer Begin */
+
+    .spacer {
+        position: absolute;
+        z-index: -1;
+
+        width: 100%;
+        height: 100px;
+
+        background-color: inherit;
+        transform: translate(-50%, -50%);
+
+        top: 125%;
+        left: 50%;
+    }
+
+    /* spacer + games sect */
+
+    .spacer .games {
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+        border-radius: 15px;
+        
+        width: 250px;
+        height: 75px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        position: absolute;
+        color: #fff;
+
+        letter-spacing: 5px;
+        font-family: 'Monsterrat', sans-serif;
 
 
-    top: -75%;
-    left: 11%;
+        top: -950%;
+        left: 82%;
 
-    z-index: 2;
-    transition: .5s;
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .spacer .games:hover {
+        top: -940%;
+        left: 82%;
+
+        position: absolute;
+    }
+
+    .spacer .games span {
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+
+        position: absolute;
+        top: 40%;
+    }
+
+    .spacer .gamesshadow {
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        border-radius: 15px;
+        position: absolute;
+
+        background-color: black;
+        opacity: 10%;
+        
+        width: 250px;
+        height: 75px;
+
+        top: -930%;
+        left: 82%;
+
+        z-index: 1;
+    }
+
+    /* spacer + bots sect */
+
+    .spacer .bots {
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+        border-radius: 15px;
+        
+        width: 250px;
+        height: 75px;
+
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+
+        position: absolute;
+        color: #fff;
+
+        letter-spacing: 5px;
+        font-family: 'Monsterrat', sans-serif;
+
+
+        top: -410%;
+        left: 31%;
+
+        z-index: 2;
+        transition: .5s;
+    }
+
+    .spacer .bots:hover {
+        top: -400%;
+        left: 31%;
+
+        position: absolute;
+    }
+
+    .spacer .bots span {
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+
+        position: absolute;
+        top: 40%;
+    }
+
+    .spacer .botsshadow {
+        transform: translate(-50%, -50%);
+        transform: rotate3D(1, 1, 1, -70deg);
+
+        border-radius: 15px;
+        position: absolute;
+
+        background-color: black;
+        opacity: 10%;
+        
+        width: 250px;
+        height: 75px;
+
+        top: -390%;
+        left: 31%;
+
+        z-index: 1;
+    }
+
+    /* Spacer Finish */
 }
-
-.spacer .bots:hover {
-    top: -65%;
-    left: 10.75%;
-
-    position: absolute;
-}
-
-.spacer .bots span {
-    width: 100%;
-    height: fit-content;
-    text-align: center;
-
-    position: absolute;
-    top: 40%;
-}
-
-.spacer .botsshadow {
-    transform: translate(-50%, -50%);
-    transform: rotate3D(1, 1, 1, -70deg);
-
-    border-radius: 15px;
-    position: absolute;
-
-    background-color: black;
-    opacity: 10%;
-    
-    width: 250px;
-    height: 75px;
-
-    top: -55%;
-    left: 10.75%;
-
-    z-index: 1;
-}
-
-/* Spacer Finish */
